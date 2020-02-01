@@ -1,0 +1,19 @@
+[ {
+  "korisnicko" : "maja",
+  "password" : "999",
+  "ime" : "Maja",
+  "prezime" : "Radovanovic",
+  "uloga" : "Kupac",
+  "telefon" : "43",
+  "mail" : "sw@sdd.com",
+  "datum" : "",
+  "grad" : "Mostar",
+  "poruke" : [ ],
+  "omiljeni" : [ ],
+  "poruceni" : [ "oglas 1" ],
+  "dostavljeni" : [ ],
+  "lajkovaniOglasi" : [ "oglas 4" ],
+  "dislijovaniOglsi" : [ ],
+  "lajkProdavci" : [ ],
+  "dislikedProdavci" : [ ]
+} ]

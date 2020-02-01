@@ -1,0 +1,17 @@
+[ {
+  "korisnicko" : "milos",
+  "password" : "16",
+  "ime" : "Milos",
+  "prezime" : "Radovanovic",
+  "uloga" : "Prodavac",
+  "telefon" : "562",
+  "mail" : "dsa@mdl.com",
+  "datum" : "",
+  "grad" : "Trebinje",
+  "poruke" : [ ],
+  "objavljeni" : [ ],
+  "isporuceni" : [ ],
+  "brLajk" : 0,
+  "brDisLajk" : 0,
+  "prijave" : 0
+} ]

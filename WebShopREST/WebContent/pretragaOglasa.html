@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/pretraga.js"></script>
+<title>Pretraga oglasa</title>
+<style>
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  width: 185px;
+  display: block;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+select,input{
+  width: 80%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 50%;
+  background-color: gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body {background-color: #f2f2f2;}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+div#prvi {
+ width:30%;
+  height:100%;
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body onload="load()">
+
+
+<div class="row">
+  <div id="prvi" class="column" style="background-color:#4CAF50;">
+  <h2>Pretraga oglasa</h2>
+    	<form class="oglas" method="post">
+			<table>
+			<tr>
+			<td>Naziv:</td>
+			<td><input type="text" name="naziv" id="naziv"></td>
+			<td class = "klasaTd"><p id = "labelaNaziv"></p></td>
+			</tr>
+
+            <tr>
+			<td>min cijena:</td>
+            <td><input type="number" name="cijenaMin" id = "cijena" ></td>
+            </tr>
+            <tr>
+            <td>max cijena</td>
+			<td><input type="number" name="cijenaMax" id = "cijena"></td>
+			</tr>
+            
+             <tr>
+			<td>min pozitivna ocjena:</td>
+            <td><input type="number" name="ocjenaMin" id = "cijena" ></td>
+            </tr>
+            <tr>
+            <td>max pozitivna ocjena: </td>
+			<td><input type="number" name="ocjenaMax" id = "cijena"></td>
+			</tr>
+			
+			
+		       <tr>
+			<td>min datum isticanja:</td>
+            <td><input type="date" name="datumMin" id = "cijena" ></td>
+            </tr>
+            <tr>
+            <td>max datum isticanja: </td>
+			<td><input type="date" name="datumMax" id = "cijena"></td>
+			</tr>
+			
+		
+			
+			 <tr>
+               <td>Grad: </td>
+               <td>  <select class="custom-select" id="grad" >
+               <option></option>
+               </select> </td>
+              </tr>
+              
+               <tr>
+               <td>Status: </td>
+               <td>  <select class="custom-select" id="status" >
+               <option>aktivan</option>
+                 <option>dostavljen</option>
+                   <option>U realizaciji</option>
+               </select> </td>
+              </tr>
+		
+		</table>     
+			<input type="submit" value="Pretraga" name="submitPretragu" id="submitPretragu1" />
+		</form>
+		
+		 <form>
+        <table>
+        <h2>Pretraga korisnika</h2>
+             <tr>
+			<td>Ime korisnika:</td>
+			<td><input type="text" name="naziv" id="imeKOr"></td>
+			<td class = "klasaTd"><p id = "labelaNaziv"></p></td>
+			</tr>
+
+			
+			 <tr>
+               <td>Grad korisnika: </td>
+               <td>  <select class="custom-select" id="gradKor" >
+               <option></option></select> </td>
+              </tr>
+        </table>
+        <input type="submit" value="Pretraga" name="submitPretragu" id="submitPretragu2" />
+        </form>
+       
+  </div>
+  <div class="column" style="background-color:#f8f8f8;">
+  <table id="oglasi"> 
+		<thead> </thead>
+		<tbody>
+		
+		</tbody>
+		 </table>
+  </div>
+</div>
+
+
+</body>
+</html>

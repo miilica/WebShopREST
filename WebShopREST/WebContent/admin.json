@@ -1,0 +1,12 @@
+[ {
+  "korisnicko" : "milica",
+  "password" : "1012",
+  "ime" : "Milica",
+  "prezime" : "Radovanovic",
+  "uloga" : "Admininstrator",
+  "telefon" : "155",
+  "mail" : "jowdqwl@mail.com",
+  "datum" : "",
+  "grad" : "Nevesinje",
+  "poruke" : [ ]
+} ]

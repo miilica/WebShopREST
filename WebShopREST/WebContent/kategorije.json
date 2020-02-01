@@ -1,0 +1,25 @@
+[ {
+  "naziv" : "Kategorija 1",
+  "opis" : "dszfg",
+  "listaOglasa" : [ ],
+  "aktivna" : true,
+  "ak" : "Da"
+}, {
+  "naziv" : "Kategorija 2",
+  "opis" : "dad  ewrew ewr",
+  "listaOglasa" : [ "Kategorija 2" ],
+  "aktivna" : true,
+  "ak" : "Da"
+}, {
+  "naziv" : "Kategorija 3",
+  "opis" : "grereerer",
+  "listaOglasa" : [ "Kategorija 3", "Kategorija 3" ],
+  "aktivna" : true,
+  "ak" : "Da"
+}, {
+  "naziv" : "Kategorija 4",
+  "opis" : "stysystrtys",
+  "listaOglasa" : [ "Kategorija 4" ],
+  "aktivna" : true,
+  "ak" : "Da"
+} ]

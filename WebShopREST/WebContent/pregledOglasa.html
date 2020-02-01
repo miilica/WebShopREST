@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/pregledoglasa.js"></script>
+<title>Pregled i izmjena oglasa</title>
+<style type="text/css">
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input#opis {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+body {background-color: #f2f2f2;}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 20%;
+}
+
+td{
+	font-weight: bold;
+}
+
+</style>
+</head>
+<body onload="onLoad()">
+<a href="pregled.html">Nazad na pocetnu</a>
+
+<table border="1" id="tbOglasi">
+		<thead>
+			<tr>
+				<th>Naziv</th>
+				<th>Prodavac</th>
+				<th>Cijena</th>
+				<th>Opis</th>
+				<th>Broj lajkova</th>
+				<th>Broj dislajkova</th>
+				<th>Datum postavljanja</th>
+				<th>Datum isticanja</th>
+				<th>Grad</th>
+				<th>Status</th>
+				<th>Slika</th>
+				<th>Lista recenzija</th>
+				<th></th>
+			</tr>
+		</thead>
+		
+		<tbody>
+		
+		</tbody>
+		
+</table>
+<div class="center">
+<br> <br>
+<h2>Izmjena oglasa</h2>
+<br> 
+<table id="izmjena">
+  <tr> 
+  	<td>
+  	 <select id="aktOglasi">
+  	 
+  	 </select>
+  	</td>
+  </tr>
+  
+  <tr>
+   <td>Ime: </td>
+   <td><input type="text" id="naziv" name="naziv" required></td>
+  </tr>
+  
+  <tr>
+   <td>Cijena: </td>
+   <td><input type="number" id="cijena" name="cijena" required></td>
+  </tr>
+  
+   <tr>
+   <td>Opis: </td>
+   <td><input type="text" id="opis" name="opis" required></td>
+  </tr>
+  
+   <tr>
+   <td>Datum isticanja: </td>
+   <td><input type="date" id="datumIst" name="datumIst" required></td>
+  </tr>
+  
+  <tr>
+   <td>Grad: </td>
+   <td><input type="text" id="grad" name="grad" required></td>
+  </tr>
+  <tr>
+ 	<td>Slika: </td>
+	   <td>
+	      <form>
+			<input type="file" id="imgSource" accept="image/*"  required="required"/>
+			<img id="sl" width="150" height="100" />
+		</form>
+		</td>
+ </tr>
+  
+  <tr>
+  <td></td>
+  <td><button id="sacuvaj" name="sacuvaj">Sačuvaj</button></td>
+  </tr>
+ 
+</table>
+	</div>
+</html>

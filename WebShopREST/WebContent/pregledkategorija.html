@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/pregledkategorija.js"></script>
+<title>Pregled i izmjena kategorija</title>
+<style >
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input#opis {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+body {background-color: #f2f2f2;}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 20%;
+}
+</style>
+</head>
+<body onload="onLoad()">
+<a href="pregled.html">Nazad na pocetnu</a>
+
+<h2>Brisanje kategorija</h2>
+<table border="1" id="tbKategorije">
+		<thead>
+			<tr>
+				<th>Naziv</th>
+				<th>Opis</th>
+				<th>Lista oglasa</th>
+				<th>Aktivan</th>
+				<th>Obrisi</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+		</tbody>
+		
+</table>
+
+<div class="center">
+
+<h2>Izmjena kategorije</h2>
+<br> 
+<table id="izmjena">
+  <tr> 
+  	<td>
+  	 <select id="aktKat">
+  	 
+  	 </select>
+  	</td>
+  </tr>
+  
+  <tr>
+   <td>Ime: </td>
+   <td><input type="text" id="naziv" name="naziv"></td>
+  </tr>
+  
+   <tr>
+   <td>Opis: </td>
+   <td><input type="text" id="opis" name="opis"></td>
+  </tr>
+  
+  <tr>
+  <td></td>
+  <td><button id="sacuvaj" name="sacuvaj">Sačuvaj</button></td>
+  </tr>
+
+
+</table>
+	</div>
+</html>
